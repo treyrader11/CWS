@@ -12,7 +12,7 @@
 
     // :: 2.0 Nav Active Code
     if ($.fn.classyNav) {
-        $('#oneMusicNav').classyNav();
+        $('#johnZarskyNav').classyNav();
     }
 
     // :: 3.0 Sliders Active Code
@@ -205,7 +205,7 @@
     if (browserWindow.width() > 767) {
         new WOW().init();
     }
-    
+
     // :: 14.0 Gallery Menu Active Code
     $('.catagory-menu a').on('click', function () {
         $('.catagory-menu a').removeClass('active');
