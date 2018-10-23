@@ -11,8 +11,8 @@ var handlebars = require('express-handlebars');
 // and documentation.
 
 keystone.init({
-	'name': 'the Cajun Webshop',
-	'brand': 'the Cajun Webshop',
+	'name': 'John Zarsky',
+	'brand': 'John Zarsky',
 	'less': 'public',
 	'static': 'public',
 	'favicon': 'public/favicon.ico',
