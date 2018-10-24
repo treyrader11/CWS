@@ -54,9 +54,9 @@ keystone.set('routes', require('./routes'));
 
 keystone.set('nav', { //this is the navbar withinn the CMS. Yo have to definen a model which is the value of the key.
 	'front page': 'FrontPage',
-	'services': 'Services',
+	'tour dates': 'TourDates',
 	'portfolio': 'Portfolio',
-	'customer reviews': 'CustomerReview'
+	'store items': 'StoreItems'
 });
 
 // Start Keystone to connect to your database and initialise the web server

@@ -21,6 +21,7 @@ exports = module.exports = function(req, res) {
 		//console.log('front page object:', q);
 
 		q.exec(function(err, results) {
+			console.log('results:***', results);
 			//var swap = false;
 			//if(Math.random() < 0.5){
 			//	swap = true;
@@ -34,7 +35,7 @@ exports = module.exports = function(req, res) {
 			//}
 
 
-	
+
 			locals.data.pageData = results;
 			//locals.pageTitle = results.pageTitle ;
 			//locals.metaDescription = results.metaDescription ;
@@ -44,10 +45,10 @@ exports = module.exports = function(req, res) {
 
 	view.on('init', function(next) {
 
-		var q = keystone.list('Services').model.find().sort('sortOrder');
+		var q = keystone.list('TourDates').model.find().sort('sortOrder');
 
 		q.exec(function(err, results) {
-			locals.data.services = results;
+			locals.data.tourDates = results;
 			next(err);
 		});
 	});
@@ -64,10 +65,10 @@ exports = module.exports = function(req, res) {
 
 	view.on('init', function(next) {
 
-		var q = keystone.list('CustomerReview').model.find().sort('sortOrder');
+		var q = keystone.list('StoreItems').model.find().sort('sortOrder');
 
 		q.exec(function(err, results) {
-			locals.data.customerReviews = results;
+			locals.data.storeItems = results;
 			next(err);
 		});
 	});
