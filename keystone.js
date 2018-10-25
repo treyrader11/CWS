@@ -15,7 +15,7 @@ keystone.init({
 	'brand': 'John Zarsky',
 	'less': 'public',
 	'static': 'public',
-	'favicon': 'public/favicon.ico',
+	'favicon': 'public/LogoZ.jpg',
 	'views': 'templates/views',
 	'view engine': '.hbs',
 
@@ -55,7 +55,6 @@ keystone.set('routes', require('./routes'));
 keystone.set('nav', { //this is the navbar withinn the CMS. Yo have to definen a model which is the value of the key.
 	'front page': 'FrontPage',
 	'tour dates': 'TourDates',
-	'portfolio': 'Portfolio',
 	'store items': 'StoreItems'
 });
 

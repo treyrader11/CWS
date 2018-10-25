@@ -10,8 +10,8 @@ exports = module.exports = function(req, res) {
 	locals.section = 'home';
 	locals.data = {
 		pageData: {},
-		services: [],
-		portfolio: []
+		services: []
+		//portfolio: []
 	};
 
 	view.on('init', function(next) {
@@ -49,16 +49,6 @@ exports = module.exports = function(req, res) {
 
 		q.exec(function(err, results) {
 			locals.data.tourDates = results;
-			next(err);
-		});
-	});
-
-	view.on('init', function(next) {
-
-		var q = keystone.list('Portfolio').model.find().sort('sortOrder');
-
-		q.exec(function(err, results) {
-			locals.data.portfolio = results;
 			next(err);
 		});
 	});
