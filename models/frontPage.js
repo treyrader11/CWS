@@ -29,6 +29,8 @@ FrontPage.add({
 	musicHeader: { type : String, "Default": "See what's new" },
 	musicMainHeader: { type : String, "Default": "Buy What's New" },
 	musicDescription: { type : Types.Html, wysiwyg : true, height : 200 },
+	emailSubheader: { type : String, "Default": "For bookings/enquiries" },
+	emailHeader: { type : String, "Default": "GET IN TOUCH" },
 	contactInfo: {
 		desc: { type : Types.Html, wysiwyg : true, height : 200 },
 		city: { type: String },

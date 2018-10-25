@@ -27,6 +27,7 @@ keystone.init({
 		extname: '.hbs',
 	}).engine,
 
+	'emails': 'templates/emails',
 	'auto update': true,
 	'session': true,
 	'auth': true,
